@@ -1,5 +1,5 @@
 package Kalkulator;
-import java.util.ArrayList;
+
 import java.util.List;
 public class Obliczacz {
 	public static  void Licz(List<Double> liczby, List<String> znaki)

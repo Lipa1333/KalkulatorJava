@@ -12,8 +12,8 @@ public class Main {
 		znaki.add("/");
 		
 
-
-	Obliczacz.Licz(liczby, znaki);
+	
+		Obliczacz.Licz(liczby, znaki);
 	
 		
 		for (Double var : liczby) {
