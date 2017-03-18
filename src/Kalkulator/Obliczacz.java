@@ -2,8 +2,16 @@ package Kalkulator;
 
 import java.util.List;
 public class Obliczacz {
-	public static  void Licz(List<Double> liczby, List<String> znaki)
+	public static  void licz(List<Double> liczby, List<String> znaki)
 	{
+		//na tym etapie przyjmujemy ze listy sa juz poprawne
+		System.out.println();
+		for (int i = 0; i < znaki.size(); i++) {
+			System.out.print(liczby.get(i) + znaki.get(i));
+		}
+		System.out.print(liczby.get(liczby.size()-1)+ "=");
+		
+		
 		while(znaki.contains("*"))
 		{
 			int i = znaki.indexOf("*");
@@ -48,5 +56,7 @@ public class Obliczacz {
 			 liczby.remove(i+1);
 			
 		}
+		System.out.print(liczby.get(liczby.size()-1));
+		System.out.println();
 	}
 }
