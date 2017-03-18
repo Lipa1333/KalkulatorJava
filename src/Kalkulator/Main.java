@@ -11,12 +11,7 @@ public class Main {
 		List<String> znaki = new ArrayList<String>();
 		short odpowiedzZWczytywacza=0;
 		String bufor="";
-		//return Wczytywacz:
-		// 0 - poprawie
-		// 1 - "koniec"
-		// 2 - nie poprawny stosunek znakow/liczb
-		// 11 - nie ma takiego pliku
-		
+	
 		Scanner odczyt = new Scanner(System.in);
 		while(!bufor.equals("Wyjdz"))
 		{
@@ -44,7 +39,7 @@ public class Main {
 				bufor ="";
 				System.out.println("Dzialanie: ");
 				bufor = odczyt.nextLine();
-				odpowiedzZWczytywacza =Wczytywacz.analizuj(liczby, znaki, bufor);
+				odpowiedzZWczytywacza =Analizator.analizuj(liczby, znaki, bufor);
 				if(odpowiedzZWczytywacza==0)
 				{
 					Obliczacz.licz(liczby, znaki);
@@ -74,7 +69,7 @@ public class Main {
 			  liczby.clear();
 				znaki.clear();
 			  bufor = plikowy.nextLine();
-			  odpowiedzZWczytywacza =Wczytywacz.analizuj(liczby, znaki, bufor);
+			  odpowiedzZWczytywacza =Analizator.analizuj(liczby, znaki, bufor);
 			  if(odpowiedzZWczytywacza==0)
 				{
 					Obliczacz.licz(liczby, znaki);

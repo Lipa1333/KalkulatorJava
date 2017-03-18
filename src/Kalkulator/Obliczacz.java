@@ -2,6 +2,12 @@ package Kalkulator;
 
 import java.util.List;
 public class Obliczacz {
+	/*
+	 * Wykonuje Wlasciwe obliczenia dla poprawnych juz list
+	 */
+	/*
+	 * Wlasciwe funkcja:
+	 */
 	public static  void licz(List<Double> liczby, List<String> znaki)
 	{
 		//na tym etapie przyjmujemy ze listy sa juz poprawne

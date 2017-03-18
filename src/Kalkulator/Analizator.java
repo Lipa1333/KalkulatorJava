@@ -2,11 +2,15 @@ package Kalkulator;
 
 import java.util.List;
 
-public class Wczytywacz{
+public class Analizator{
+	/*
+	 * Analizuje podana linijke i stara sie z niej wyciagnac dzialanie
+	 */
 	
 	
-	
-	
+	/*
+	 * Polaczenie miedzy obsluga uzytkownika a wlasciwym dzialaniem
+	 */
 	public static short analizuj(List<Double> liczby,List<String> znaki,String bufor)
 	{
 		if(bufor.contains("koniec"))
@@ -16,7 +20,9 @@ public class Wczytywacz{
 		
 		return podzielLinie(bufor,liczby,znaki);
 	}
-	
+	/*
+	 * Wlasciwie dzialanie
+	 */
 	private static short podzielLinie(String Dane,List<Double> liczby,List<String> znaki)
 	{
 		int i=0;
